@@ -7,7 +7,7 @@ function collect_ratings(){
     let rating = 0;
     const elements = document.querySelectorAll('.rating');
     if (ratings.count!== 0){
-        ratings.average = ratings.count / ratings.sum;
+        ratings.average = ratings.sum / ratings.count;
     }
     return ratings;
 
